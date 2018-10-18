@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="dist/styles/style.min.css">
+</head>
+
+<body>
+
+    <!--NAV BAR-->
+    <header>
+
+        <h1 class="logo">
+            <a href="index.html">Shop</a>
+        </h1>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li>
+                    <a href="products.html">Shop</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="service.html">Services</a>
+                </li>
+                <li>
+                    <a href="contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+    </header>
+
+
+    <!--BODY-->
+
+    <main>
+
+        <!--CONTENT BANNER-->
+        <div class="about content-img">
+            <div class="center-container">
+                <h1 class="product-h1">CONTACT US</h1>
+                <h2 class="product-h2">Have any questions or comments?</h2>
+            </div>
+        </div>
+
+        
+        <!--CONTACT INFO-->
+        <div class="contact-info">
+            <div class="contact-info-list">
+                <h1>Contact Information</h1>
+                <ul class="contact-list">
+                    <li class="li1"><span>198 West 21th Street, <br>
+                        Suite 721 New York NY 10016</span></li>
+                    <li class="li2"><span>+ 1235 2355 98</span></li>
+                    <li class="li3"><span>info@yoursite.com</span></li>
+                    <li class="li4"><span>shopinfo.co</span></li>
+                </ul>
+            </div>
+
+            <div class="contact-form-section">
+                <h1>Get In Touch</h1>
+                <form action="" class="contact-form">
+                    <input type="text" name="first" placeholder="First Name">
+                    <input type="text" name="last" placeholder="Last Name">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="submit" value="Submit Message">
+                </form>
+            </div>
+        </div>
+
+
+        <!--MAP-->
+        <div id="map"></div>
+
+
+        <!--NEWSLETTER-->
+        <div class="newsletter">
+
+            <div class="newsletter-cta">
+                <h1>Newsletter</h1>
+                <h2>Just stay tune for our latest Product. Now you can subscribe</h2>
+                <form action="" id="newsletter-form">
+                    <input type="text" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+
+        <!--END LINKS-->
+        <div class="end-links">
+            <div class="shop-about">
+                <h1>Shop</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos ipsum, aut dicta, voluptatibus a ex
+                    dolorem nam repudiandae impedit officiis possimus vel itaque deserunt, quod obcaecati debitis iste est.</p>
+            </div>
+
+            <div class="columns">
+                <ul class="column1">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                    <li>
+                        <a href="#">Meetups</a>
+                    </li>
+                </ul>
+
+                <ul class="column2">
+                    <li>
+                        <a href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#">Handbook</a>
+                    </li>
+                    <li>
+                        <a href="#">Help Desk</a>
+                    </li>
+                </ul>
+
+                <ul class="column3">
+                    <li>
+                        <a href="#">Find Designers</a>
+                    </li>
+                    <li>
+                        <a href="#">Find Developers</a>
+                    </li>
+                    <li>
+                        <a href="#">Teams</a>
+                    </li>
+                    <li>
+                        <a href="#">Advertise</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2018 SHOP LLC. All Rights Reserved</p>
+    </footer>
+
+    <script>
+        let map;
+
+        function initMap() {
+            let options = {
+                zoom: 6,
+                center: { lat: 35.3234, lng: -80.5456 }
+            }
+
+            map = new google.maps.Map(document.getElementById("map"), options);
+
+            let marker = new google.maps.Marker({
+                position: {lat:35.2271 ,lng: -80.8431},
+                map: map
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO6eXo6noSbhfb2xEobpYU298Zftr16Zc&callback=initMap" async
+        defer></script>
+</body>
+
+</html>

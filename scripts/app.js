@@ -4,9 +4,9 @@ let productBox = document.querySelector('.product-info');
 let index = 0;
 
 let imgURLs = [
-    "img/lg-product1.jpeg",
-    "img/lg-product2.jpg",
-    "img/lg-product3.jpeg",
+    "dist/img/lg-product1.jpeg",
+    "dist/img/lg-product2.jpg",
+    "dist/img/lg-product3.jpeg",
 ]
 
 let seconds = 4;
